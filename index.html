@@ -3,71 +3,142 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>Studio Atomoprogetti — Cantiere aperto</title>
-  <meta name="description" content="Studio Atomoprogetti: nuovo sito in costruzione. Architettura, pratiche e territorio in Sicilia." />
-  <meta property="og:title" content="Studio Atomoprogetti — Cantiere aperto" />
-  <meta property="og:description" content="Nuovo sito in costruzione. Architettura, pratiche e territorio." />
+  <title>Studio Atomoprogetti — Architettura in Sicilia</title>
+  <meta name="description" content="Studio Atomoprogetti: progettazione architettonica, direzione lavori e pratiche edilizie. Palermo, tutta la Sicilia." />
+  <meta property="og:title" content="Studio Atomoprogetti — Architettura in Sicilia" />
+  <meta property="og:description" content="Progettazione, direzione lavori, pratiche edilizie. Opere e cantieri dello studio." />
+  <meta property="og:image" content="foto/hero-capannone.jpg" />
   <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://atomoprogetti.it/" />
-  <link rel="canonical" href="https://atomoprogetti.it/" />
-  <link rel="stylesheet" href="./styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400&family=Inter:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <div class="grain" aria-hidden="true"></div>
-  <svg class="crane" viewBox="0 0 900 520" aria-hidden="true">
-    <path class="draw" d="M70 470 H830" />
-    <path class="draw delay-1" d="M150 470 V120 H540" />
-    <path class="draw delay-2" d="M540 120 L720 220" />
-    <path class="draw delay-3" d="M540 120 L390 245" />
-    <path class="draw delay-4" d="M390 245 V470" />
-    <path class="draw delay-5" d="M720 220 V330" />
-    <path class="draw delay-6" d="M690 330 H750 L720 385 Z" />
-    <path class="draw delay-7" d="M235 470 L305 330 L375 470" />
-    <path class="draw delay-8" d="M305 330 V470" />
-  </svg>
+  <a class="skip" href="#opere">Salta al contenuto</a>
 
-  <header class="top">
-    <a class="brand" href="/" aria-label="Studio Atomoprogetti">
-      <span class="mark">A</span>
-      <span>Studio Atomoprogetti</span>
+  <header class="top" id="top">
+    <a class="wordmark" href="#top" aria-label="Studio Atomoprogetti — inizio pagina">
+      Studio&nbsp;<em>Atomoprogetti</em>
     </a>
-    <a class="mail" href="mailto:michelangelo@atomoprogetti.it">michelangelo@atomoprogetti.it</a>
+    <nav class="nav" aria-label="Navigazione principale">
+      <a href="#opere">Opere</a>
+      <a href="#cantiere">Cantiere</a>
+      <a href="#studio">Studio</a>
+      <a href="#contatti">Contatti</a>
+    </nav>
   </header>
 
-  <main class="stage">
-    <section class="claim" aria-labelledby="titolo">
-      <p class="kicker">Nuovo sito in costruzione</p>
-      <h1 id="titolo">Cantiere<br />aperto<span>.</span></h1>
-      <p class="sub">Architettura, pratiche e territorio. Stiamo tirando le linee nuove: poche, dritte, misurate.</p>
+  <!-- HERO -->
+  <section class="hero" aria-label="Presentazione">
+    <figure class="hero-media">
+      <img src="foto/hero-capannone.jpg" alt="Capannone industriale in lamiera bianca e grigia, prospetto netto contro il cielo" fetchpriority="high" />
+    </figure>
+    <div class="hero-veil" aria-hidden="true"></div>
+    <div class="hero-text">
+      <p class="kicker">Architettura · Strutture · Pratiche — Sicilia</p>
+      <h1 class="display">Atomo<em>progetti</em></h1>
+      <p class="sub">Progettiamo edifici che stanno in piedi da soli:<br />la bellezza viene dopo la precisione, mai prima.</p>
+    </div>
+    <p class="hero-caption">Capannone industriale — 2025</p>
+  </section>
+
+  <!-- 01 OPERE -->
+  <main>
+    <section class="chapter" id="opere">
+      <header class="chapter-head">
+        <span class="num">01</span>
+        <h2>Opere</h2>
+        <p class="chapter-note">Quello che abbiamo costruito, fotografato com'è.</p>
+      </header>
+
+      <article class="opera reveal">
+        <figure class="opera-media">
+          <img src="foto/stalla-finita.jpg" alt="Stalla con struttura in acciaio, prospetto finito con portoni verdi, campo coltivato in primo piano" loading="lazy" />
+        </figure>
+        <div class="opera-info">
+          <h3>Stalla in acciaio</h3>
+          <dl>
+            <div><dt>Tipo</dt><dd>Capannone zootecnico</dd></div>
+            <div><dt>Anno</dt><dd>2025</dd></div>
+            <div><dt>Stato</dt><dd>Completata</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <article class="opera opera--alt reveal">
+        <figure class="opera-media">
+          <img src="foto/centro-benessere-1.jpg" alt="Centro benessere in costruzione su collina, volumi in intonaco beige e volume rosso" loading="lazy" />
+        </figure>
+        <div class="opera-info">
+          <h3>Centro benessere in collina</h3>
+          <dl>
+            <div><dt>Tipo</dt><dd>Centro benessere</dd></div>
+            <div><dt>Dotazioni</dt><dd>Bagno turco, sauna, piscina idromassaggio</dd></div>
+            <div><dt>Anno</dt><dd>2025</dd></div>
+            <div><dt>Stato</dt><dd>In costruzione</dd></div>
+          </dl>
+        </div>
+      </article>
+
+      <figure class="wide reveal">
+        <img src="foto/centro-benessere-2.jpg" alt="Il volume rosso del centro benessere con oblò circolare, figura sul terrazzo, ulivi intorno" loading="lazy" />
+        <figcaption>Centro benessere — il volume rosso con l'oblò</figcaption>
+      </figure>
     </section>
 
-    <aside class="card" aria-label="Stato lavori">
-      <div class="card-head">
-        <span>Stato lavori</span>
-        <strong>in corso</strong>
+    <!-- 02 CANTIERE -->
+    <section class="chapter chapter--paper" id="cantiere">
+      <header class="chapter-head">
+        <span class="num">02</span>
+        <h2>Cantiere</h2>
+        <p class="chapter-note">Il durante. Dove si vede se un progetto tiene.</p>
+      </header>
+
+      <div class="duo reveal">
+        <figure>
+          <img src="foto/cantiere-cementine-1.jpg" alt="Interno in ristrutturazione: pareti in cartongesso grezzo sopra pavimento in cementine decorate originali" loading="lazy" />
+        </figure>
+        <figure>
+          <img src="foto/cantiere-cementine-2.jpg" alt="Lo stesso interno durante i lavori, cementine decorate e pareti in allestimento" loading="lazy" />
+        </figure>
       </div>
-      <ol class="worklist">
-        <li><span>01</span><div><strong>Rilievo</strong><p>Il luogo prima della forma.</p></div></li>
-        <li><span>02</span><div><strong>Disegno</strong><p>Togliere finché tiene.</p></div></li>
-        <li><span>03</span><div><strong>Consegna</strong><p>Carta firmata, cantiere vivo.</p></div></li>
-      </ol>
-      <div class="meter" aria-label="Avanzamento">
-        <span style="--v: 42%"></span>
+      <p class="statement reveal">Le cementine restano, il resto si rifà.<br />Misurare due volte, tagliare una.</p>
+
+      <figure class="wide reveal">
+        <img src="foto/cantiere-piazzale.jpg" alt="Piazzale di cantiere al tramonto davanti al capannone agricolo, materiale da costruzione in primo piano" loading="lazy" />
+        <figcaption>Il piazzale della stalla, fine giornata</figcaption>
+      </figure>
+    </section>
+
+    <!-- 03 STUDIO -->
+    <section class="chapter" id="studio">
+      <header class="chapter-head">
+        <span class="num">03</span>
+        <h2>Studio</h2>
+      </header>
+      <div class="studio-grid reveal">
+        <figure class="studio-media">
+          <img src="foto/studio-team.jpg" alt="L'architetto Bartolotta con collaboratrice e collaboratore davanti al capannone industriale completato" loading="lazy" />
+        </figure>
+        <div class="studio-text">
+          <p><strong>Studio Atomoprogetti</strong> è lo studio dell'Arch. Michelangelo Bartolotta. Base a <strong>Palermo</strong>, cantieri in <strong>tutta la Sicilia</strong>: progettazione architettonica, direzione dei lavori, pratiche edilizie e catastali.</p>
+          <p>Seguiamo l'opera dal primo rilievo all'ultima consegna — preferiamo i cantieri alle parole.</p>
+        </div>
       </div>
-      <p class="fine">La vetrina torna quando è degna del lavoro.</p>
-    </aside>
+    </section>
+
+    <!-- CONTATTI -->
+    <footer class="contatti" id="contatti">
+      <h2 class="contatti-title">Parliamone.</h2>
+      <div class="contatti-links">
+        <a href="tel:+393395896023">+39 339 589 6023</a>
+        <a href="mailto:michelangelo@atomoprogetti.it">michelangelo@atomoprogetti.it</a>
+      </div>
+      <p class="legal">Studio Atomoprogetti · Palermo · Sicilia · © 2026</p>
+    </footer>
   </main>
 
-  <footer class="bottom" aria-label="Contatti">
-    <div class="ticker" aria-hidden="true">
-      <span>rilievo — progetto — pratica — cantiere — misura — luce — territorio —&nbsp;</span>
-      <span>rilievo — progetto — pratica — cantiere — misura — luce — territorio —&nbsp;</span>
-    </div>
-    <div class="contacts">
-      <a href="tel:+393395896023">+39 339 5896023</a>
-      <span>Via Domenico Scinà 28, Palermo</span>
-      <a href="mailto:michelangelo@atomoprogetti.it">scrivici</a>
-    </div>
-  </footer>
+  <script src="main.js" defer></script>
 </body>
 </html>
